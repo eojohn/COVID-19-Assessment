@@ -1,0 +1,158 @@
+import * as consts from '../store/Constants';
+export const reset = (n) => {
+    return dispatch => {
+        dispatch({
+            type:consts.RESET,
+            payload:n
+        });
+        dispatch({
+            type:consts.TEST_BEGAN,
+            payload:false
+        })
+        dispatch({
+            type:consts.START_TEST,
+            payload:false
+        });
+        dispatch({
+            type:consts.BREATH,
+            payload:0
+        });
+        dispatch({
+            type:consts.RECORD,
+            payload:''
+        });
+        dispatch({
+            type:consts.ASTHMA,
+            payload:false
+        });
+        dispatch({
+            type:consts.DRY,
+            payload:0
+        });
+        dispatch({
+            type:consts.FOOT,
+            payload:0
+        });
+        dispatch({
+            type:consts.SHOW_GENDER,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_WEIGHT,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_HEIGHT,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_SMELL,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_TASTE,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_SMOKE,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_BREATH,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_COUGH,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_RECORD,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_PHLEGM,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_DRY,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_POOP,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_HEAD,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_FEVER,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_MIN_RESULTS,
+            payload:false
+        });
+        dispatch({
+            type:consts.HIDE_SMOKE,
+            payload:false
+        });
+        dispatch({
+            type:consts.SKIP_COUGH,
+            payload:false
+        });
+        dispatch({
+            type:consts.SHOW_FOOT,
+            payload:false
+        });
+        dispatch({
+            type:consts.ASYMP,
+            payload:false
+        });
+        dispatch({
+            type:consts.HAS_COVID,
+            payload:false
+        });
+       
+    }
+}
+export const whiteBg = (n) => {
+    return dispatch => {
+        dispatch({
+            type:consts.WHITE_BG,
+            payload:n
+        })
+    }
+}
+export const showSkip = (n) => {
+    return dispatch => {
+        dispatch({
+            type:consts.SHOW_SKIP,
+            payload:n
+        })
+    }
+}
+export const testBegan = (n) => {
+    return dispatch => {
+        dispatch({
+            type:consts.TEST_BEGAN,
+            payload:n
+        })
+        dispatch({
+            type:consts.WHITE_BG,
+            payload:true
+        })
+    }
+}
+export const showPhelgm = () => {
+    return dispatch => {
+        dispatch({
+            type:consts.SHOW_PHLEGM,
+            payload:true
+        })
+        dispatch({
+            type:consts.SHOW_SKIP,
+            payload:false
+        })
+    }
+}
